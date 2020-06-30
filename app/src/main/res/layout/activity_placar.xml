@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     style="@style/timpaylogo">
 
     <TextView
@@ -21,7 +20,93 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:text="Placar"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIME 1" />
+
+    <TextView
+        android:id="@+id/scoreLeftTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="submitScoreLeft"
+        android:text="GOL"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIME 2" />
+
+    <TextView
+        android:id="@+id/scoreRightTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="submitScoreRight"
+        android:text="GOL"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="resetButton"
+        android:text="Reset"
+        android:textColor="#FFFFFF" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="401dp"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="startChronometer"
+        android:text="Start"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="pauseChronometer"
+        android:text="Pause"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="resetChronometer"
+        android:text="Reset"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/btnVoltar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Voltar"
+        android:textColor="#FFFFFF" />
+
 </LinearLayout>

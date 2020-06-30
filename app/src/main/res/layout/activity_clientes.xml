@@ -25,4 +25,20 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/btnVisualizarClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Visualizar clientes"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnVoltar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Voltar"
+        android:textColor="#FFFFFF" />
+
 </LinearLayout>
